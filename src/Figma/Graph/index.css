@@ -1,0 +1,60 @@
+.financialChartToolbar button,
+.financialChartIndicatorMenu,
+.financialChartTypePicker {
+  display: none !important;
+}
+.financialChartToolbar {
+  justify-content: flex-end !important;
+  border: none !important;
+  background-color: white !important;
+}
+.financialChartRangeSelector {
+  gap: 15px !important;
+  background-color: white;
+  font-size: 18px;
+  color: gray;
+  display: none !important;
+  width: 100% !important;
+}
+.stockChanges {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(10px);
+  flex-wrap: wrap;
+}
+.stockactions {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  width: 50%;
+}
+.chart {
+  width: 100%;
+  height: 700px;
+}
+.fullscreen-enabled {
+  background: #fff;
+}
+.button {
+  display: flex;
+  gap: 20px;
+}
+.activedata {
+  background-color: #4b40ee;
+  color: #fff;
+  border: none;
+  width: 50px;
+  border-radius: 2px;
+  font-size: 20px;
+}
+.btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: grey;
+}
