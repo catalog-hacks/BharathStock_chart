@@ -15,11 +15,15 @@ export const Index = () => {
         <div className="stockValue">
           <div className="currentStock">
             <Typography className="number" variant="h3">
-              {value ? parseFloat(total).toFixed(2) : 125.6}
+              {parseFloat(total).toFixed(2)}
             </Typography>
             <Typography className="subscript">USD</Typography>
           </div>
-          <Typography className="profit">+0.700(0.553%)</Typography>
+          <Typography className="profit">
+            {" "}
+            {total - before > 0 ? "+" : ""} {(total - before).toFixed(3)}
+            {" (" + (((total - before) / total) * 100).toFixed(2) + "%)"}
+          </Typography>
         </div>
         <div className="stocksNavigation">
           <Typography
