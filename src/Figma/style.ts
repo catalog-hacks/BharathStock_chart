@@ -33,6 +33,7 @@ export const RectangularBox = styled.div`
     font-weight: 400;
     font-size: 1.1rem;
     color: #67bf6b;
+    margin-left: 12px;
     line-height: 22.77px;
     font-family: "Circular Std";
   }

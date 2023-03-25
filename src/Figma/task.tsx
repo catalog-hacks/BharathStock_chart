@@ -17,7 +17,7 @@ export const FirstPart = () => {
             </Typography>
             <Typography className="subscript">USD</Typography>
           </div>
-          <Typography className="profit">+0.700(0.553%)</Typography>
+          <Typography className="profit">+ 0.700 (0.553%)</Typography>
         </div>
         <div className="stocksNavigation">
           <Typography
