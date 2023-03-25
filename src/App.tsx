@@ -1,7 +1,9 @@
 import "./App.css";
-import { Index } from "./Figma/task";
+import { FirstPart } from "./Figma/task";
 function App() {
-  return <div className="App"><Index/></div>;
+  return <div className="App">
+    <FirstPart/>
+    </div>;
 }
 
 export default App;

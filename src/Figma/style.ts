@@ -1,54 +1,68 @@
 import styled from "@emotion/styled";
-export const Graph = styled.div`
-  box-sizing: border-box;
-  margin: 2% 5%;
-  width: 80%;
-  height: auto;
-  padding: 3%;
-  .stockDashboard {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+export const RectangularBox = styled.div`
+  /* border: 1px solid #bdbebf; */
+  margin: 50px auto;
+  width: 50%;
+  padding: 60px;
+  /* display: flex; */
+  .container {
+    width: 100%;
+   
   }
   .stockValue {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
   }
   .currentStock {
     display: flex;
-    width: 100px;
+    gap: 8px;
   }
   .number {
-    font-size: 70px;
     font-weight: 400;
+    font-size: 4.37rem;
+    line-height: 88.56px;
   }
   .subscript {
-    margin-top: 8px;
-    font-size: 24px;
-    color: #bdbebf;
+    font-style: normal;
     font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 30px;
+    color: #bdbebf;
+    margin-top: 12px;
   }
   .profit {
     display: flex;
-    font-family: Circular Std;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #67bf6b;
+    line-height: 22.77px;
+    font-family: "Circular Std";
   }
   .stocksNavigation {
     display: flex;
-    width: 100%;
-    gap: 3%;
+    padding: 10px 0;
+    gap: 30px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    width: auto;
     border-bottom: 2px solid #eff1f3;
+    /* 
+    width: auto%;
+    gap: 3%;
+    border-bottom: 2px solid #eff1f3; */
   }
-  p {
-    font-size: 20px;
+  .nav-btn {
+    font-size: 1.1rem;
     font-weight: 400;
+    line-height: 22.77px;
     color: #6f7177;
   }
   .active {
-    border-bottom: 3px solid#4b40ee;
+    border-bottom: 3px solid #4b40ee;
     color: #000;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 22.77px;
   }
 `;

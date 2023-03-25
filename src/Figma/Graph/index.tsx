@@ -26,93 +26,93 @@ const FinancialChartMultipleData = () => {
   return (
     <div className="container sample">
       <div className="container">
-        <FullScreen handle={handle}>
-          <div className="stockChanges">
-            <div className="stockactions">
-              <div className="actions">
-                <Maximize2 color="#6F7177" />
-                <Typography
-                  fontSize={15}
-                  fontWeight={400}
-                  color="#6F7177"
-                  onClick={handle.enter}
-                >
-                  Fullscreen
-                </Typography>
-              </div>
-              <div className="actions">
-                <PlusCircle color="#6F7177" />
-                <Typography fontSize={15} fontWeight={400} color="#6F7177">
-                  Comapare
-                </Typography>
-              </div>
+        <div className="stockChanges">
+          <div className="stockactions">
+            <div className="actions">
+              <Maximize2 color="#6F7177" />
+              <Typography
+                fontSize={15}
+                fontWeight={400}
+                color="#6F7177"
+                onClick={handle.enter}
+              >
+                Fullscreen
+              </Typography>
             </div>
-            <div className="button">
-              <button
-                className={activeLink === "one" ? "activedata" : "btn"}
-                onClick={() => {
-                  getData(23);
-                  setActiveLink("one");
-                }}
-              >
-                1d
-              </button>
-              <button
-                className={activeLink === "three" ? "activedata" : "btn"}
-                onClick={() => {
-                  getData(69);
-                  setActiveLink("three");
-                }}
-              >
-                3d
-              </button>
-              <button
-                className={activeLink === "month" ? "activedata" : "btn"}
-                onClick={() => {
-                  getData(161);
-                  setActiveLink("month");
-                }}
-              >
-                1w
-              </button>
-              <button
-                className={activeLink === "six" ? "activedata" : "btn"}
-                onClick={() => {
-                  getData(774);
-                  setActiveLink("six");
-                }}
-              >
-                1m
-              </button>
-              <button
-                className={activeLink === "year" ? "activedata" : "btn"}
-                onClick={() => {
-                  getData(1000);
-                  setActiveLink("year");
-                }}
-              >
-                6m
-              </button>
-              <button
-                className={activeLink === "all" ? "activedata" : "btn"}
-                onClick={() => {
-                  getData(1200);
-                  setActiveLink("all");
-                }}
-              >
-                1y
-              </button>
-              <button
-                className={activeLink === "max" ? "activedata" : "btn"}
-                onClick={() => {
-                  getData(2000);
-                  setActiveLink("max");
-                }}
-              >
-                max
-              </button>
+            <div className="actions">
+              <PlusCircle color="#6F7177" />
+              <Typography fontSize={15} fontWeight={400} color="#6F7177">
+                Compare
+              </Typography>
             </div>
           </div>
+          <div className="button">
+            <button
+              className={activeLink === "one" ? "activedata" : "btn"}
+              onClick={() => {
+                getData(23);
+                setActiveLink("one");
+              }}
+            >
+              1d
+            </button>
+            <button
+              className={activeLink === "three" ? "activedata" : "btn"}
+              onClick={() => {
+                getData(69);
+                setActiveLink("three");
+              }}
+            >
+              3d
+            </button>
+            <button
+              className={activeLink === "month" ? "activedata" : "btn"}
+              onClick={() => {
+                getData(161);
+                setActiveLink("month");
+              }}
+            >
+              1w
+            </button>
+            <button
+              className={activeLink === "six" ? "activedata" : "btn"}
+              onClick={() => {
+                getData(774);
+                setActiveLink("six");
+              }}
+            >
+              1m
+            </button>
+            <button
+              className={activeLink === "year" ? "activedata" : "btn"}
+              onClick={() => {
+                getData(1000);
+                setActiveLink("year");
+              }}
+            >
+              6m
+            </button>
+            <button
+              className={activeLink === "all" ? "activedata" : "btn"}
+              onClick={() => {
+                getData(1200);
+                setActiveLink("all");
+              }}
+            >
+              1y
+            </button>
+            <button
+              className={activeLink === "max" ? "activedata" : "btn"}
+              onClick={() => {
+                getData(2000);
+                setActiveLink("max");
+              }}
+            >
+              max
+            </button>
+          </div>
+        </div>
+        <FullScreen handle={handle}>
           <div className="chart">
             <IgrFinancialChart
               width="100%"
