@@ -13,7 +13,7 @@ export const FirstPart = () => {
         <div className="stockValue">
           <div className="currentStock">
             <Typography className="number" variant="h3">
-              125.6
+              126.5
             </Typography>
             <Typography className="subscript">USD</Typography>
           </div>
@@ -52,9 +52,8 @@ export const FirstPart = () => {
           </Typography>
         </div>
       </div>
-    
-        <FinancialChartMultipleData/>
-    
+
+      <FinancialChartMultipleData />
     </RectangularBox>
   );
 };
