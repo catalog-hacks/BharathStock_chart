@@ -29,7 +29,7 @@ const FinancialChartMultipleData = () => {
         <div className="stockChanges">
           <div className="stockactions">
             <div className="actions">
-              <Maximize2 color="#6F7177" />
+              <Maximize2 color="#6F7177" size={18}/>
               <Typography
                 fontSize={15}
                 fontWeight={400}
@@ -40,7 +40,7 @@ const FinancialChartMultipleData = () => {
               </Typography>
             </div>
             <div className="actions">
-              <PlusCircle color="#6F7177" />
+              <PlusCircle color="#6F7177" size={18} />
               <Typography fontSize={15} fontWeight={400} color="#6F7177">
                 Compare
               </Typography>

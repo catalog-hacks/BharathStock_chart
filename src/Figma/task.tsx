@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import { useState } from "react";
 import { RectangularBox } from "./style";
 import FinancialChartMultipleData from "./Graph";
+import { blue } from "@mui/material/colors";
 export const FirstPart = () => {
   const [activeLink, setActiveLink] = useState("");
   const handleLinkClick = (link: React.SetStateAction<string>) => {
@@ -29,6 +30,7 @@ export const FirstPart = () => {
           <Typography
             className={activeLink === "Chart" ? "active" : "nav-btn"}
             onClick={() => handleLinkClick("Chart")}
+            // style={{ borderBottom: '3px solid blue' }}
           >
             Chart
           </Typography>
